@@ -24,7 +24,6 @@
     "ai": "^2.1.26",
     "class-variance-authority": "^0.6.1",
     "clsx": "^1.2.1",
-    "gpt3-tokenizer": "^1.1.5",
     "isbot": "^3.6.12",
     "langchain": "^0.0.116",
     "lucide-react": "^0.259.0",
