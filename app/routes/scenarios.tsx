@@ -22,10 +22,14 @@ export function MainNav() {
 
   return (
     <div className="flex">
-      <Link to="/scenarios" className="mr-6">
-        <img src="/continue-well-logo.jpg" alt="ContinueWell" className="h-16"/>
+      <Link to="/" className="mr-6">
+        <img
+          src="/continue-well-logo.jpg"
+          alt="ContinueWell"
+          className="h-16"
+        />
       </Link>
-      <nav className="flex items-center space-x-6 font-medium mr-auto" >
+      <nav className="flex items-center space-x-6 font-medium mr-auto">
         {scenarios.map((scenario) => {
           return (
             <Link
@@ -43,7 +47,7 @@ export function MainNav() {
           );
         })}
       </nav>
-      <img src="/sjrh-logo.png" alt="SJRH" className="h-16"/>
+      <img src="/sjrh-logo.png" alt="SJRH" className="h-16" />
     </div>
   );
 }
