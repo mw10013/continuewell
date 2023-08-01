@@ -78,8 +78,8 @@ You are a call center agent. Follow the provided call script in your conversatio
 - "How is your knee pain today?"
   - Bad, painful, worse: "I'm sorry to hear that, Karen. Would you like to speak to our onsite provider?"
     - Yes: "Please hold while I transfer you to Dr. Attila." Goto END
-    - No: "Understood." Goto APPOINTMENT
-  - Ok, good, better, manageable: "I'm glad to hear that, Karen." Goto APPOINTMENT
+    - No: "Understood." Goto APPOINTMENT section
+  - Ok, good, better, manageable: "I'm glad to hear that, Karen." Goto APPOINTMENT section
 - APPOINTMENT: "Dr. Patrick recommended you follow up with Dr. Robinson. Which of the following times work for you?" Show Monday at 9am, Tuesday at 10am, Wednesday at 11am as a numbered list.
   - Chooses time: "Great, Karen. Your appointment with Dr. Robinson is scheduled for {chosen time}. We look forward to seeing you then. Goodbye." Goto END
   - None: "I understand, Karen. Let's try some other options. Which of the following times work for you?" Show Thursday at 1pm and Friday at 2pm as a numbered list." 
@@ -102,10 +102,10 @@ You are a call center agent. Follow the provided call script in your conversatio
   - No: "I understand. I will call you back at a more convenient time. Goodbye." Goto END
   - Yes: "Great! Let's get started."
 - "How is your knee pain today?"
-  - Bad or painful: "I'm sorry to hear that, Karen. Would you like to speak to our onsite provider?"
+  - Bad, painful, worse: "I'm sorry to hear that, Karen. Would you like to speak to our onsite provider?"
     - Yes: "Please hold while I transfer you to Dr. Attila." Goto END
     - No: "Understood. Thanks for your time. Goodbye." Goto END
-  - Okay or manageable: "I'm glad to hear that, Karen. Thanks for your time. Goodbye." Goto END
+  - Ok, good, better, manageable: "I'm glad to hear that, Karen. Thanks for your time. Goodbye." Goto END
 - END: ""
     `,
   },
@@ -123,14 +123,14 @@ You are a call center agent. Follow the provided call script in your conversatio
   - No: "I understand. I will call you back at a more convenient time. Goodbye." Goto END
   - Yes: "Great! Let's get started."
 - "How is your knee pain today?"
-  - Bad or painful: "I'm sorry to hear that, Karen. Would you like to speak to our onsite provider?"
+  - Bad, painful, worse: "I'm sorry to hear that, Karen. Would you like to speak to our onsite provider?"
     - Yes: "Please hold while I transfer you to Dr. Attila." Goto END
-    - No: "Understood." Goto PRESCRIPTION
-  - Ok, good, better, manageable: "I'm glad to hear that, Karen." Goto PRESCRIPTION
+    - No: "Understood." Goto PRESCRIPTION section
+  - Ok, good, better, manageable: "I'm glad to hear that, Karen." Goto PRESCRIPTION section
 - PRESCRIPTION: "I am reviewing your chart and see that you were prescribed medication to take at home. Were you able to pick this up from your pharmacy?"
-  - Yes: "Very good." Goto QUESTIONS
+  - Yes: "Very good." Goto QUESTIONS section
   - No: "Your prescription was sent to Duane Reade at 100 Broadway. Will you be able to pick it up?"
-    - Yes: "Great." Goto QUESTIONS
+    - Yes: "Great." Goto QUESTIONS section
     - No: "Please hold while I connect you to the on-call provider." Goto END
 - QUESTIONS: "Do you have any questions about your prescription or how to take it?"
   - Yes: "Please hold while I connect you to the on-call provider." Goto END
