@@ -45,8 +45,8 @@ dependencies:
     specifier: ^1.19.1
     version: 1.19.1
   ai:
-    specifier: ^2.1.26
-    version: 2.1.26(react@18.2.0)(solid-js@1.7.8)(svelte@4.1.2)(vue@3.3.4)
+    specifier: ^2.1.31
+    version: 2.1.31(react@18.2.0)(solid-js@1.7.8)(svelte@4.1.2)(vue@3.3.4)
   class-variance-authority:
     specifier: ^0.6.1
     version: 0.6.1
@@ -57,8 +57,8 @@ dependencies:
     specifier: ^3.6.12
     version: 3.6.12
   langchain:
-    specifier: ^0.0.116
-    version: 0.0.116
+    specifier: ^0.0.121
+    version: 0.0.121
   lucide-react:
     specifier: ^0.259.0
     version: 0.259.0(react@18.2.0)
@@ -66,8 +66,8 @@ dependencies:
     specifier: ^4.0.2
     version: 4.0.2
   openai-edge:
-    specifier: ^1.2.0
-    version: 1.2.0
+    specifier: ^1.2.2
+    version: 1.2.2
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -3428,8 +3428,8 @@ packages:
     resolution: {integrity: sha512-hCOfMzbFx5IDutmWLAt6MZwOUjIfSM9G9FyVxytmE4Rs/5YDPWQrD/+IR1w+FweD9H2oOZEnv36TmkjhNURBVA==}
     dev: true
 
-  /ai@2.1.26(react@18.2.0)(solid-js@1.7.8)(svelte@4.1.2)(vue@3.3.4):
-    resolution: {integrity: sha512-WlE9zausBM6rFvBPpMNsu3MpRY3Q85x9ZsurPWCS0AQ613gTDyuunYTLcBY0+QYWtl2H/8SWx9vyCjgRwwXMqg==}
+  /ai@2.1.31(react@18.2.0)(solid-js@1.7.8)(svelte@4.1.2)(vue@3.3.4):
+    resolution: {integrity: sha512-ihkimg9iP/C/OaxjYj9KgA4gPC9Rzw60Xv3+AWYrQ807L/NEF8sgZBmA1hv8/DC8KzMv/7N+a5HCQPDZXNUs+g==}
     engines: {node: '>=14.6'}
     peerDependencies:
       react: ^18.2.0
@@ -6350,8 +6350,8 @@ packages:
     resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
     engines: {node: '>=6'}
 
-  /langchain@0.0.116:
-    resolution: {integrity: sha512-bFXj5MDWPKkSiQUhx//p6zDLrSo2aFZnewhmUwJYRKkSPkXE4MxTzPqxZa8E0hv9EqyOb6dA8RVcvh6xp1hUkw==}
+  /langchain@0.0.121:
+    resolution: {integrity: sha512-3zhrBZTONTcNuReeVzq2SPns+B8ZtXdagwyUvoy9h0jtMmBH5PTM+IIGjw9qM3fjkO06DbZPwuelqmVNmdQHKg==}
     engines: {node: '>=18'}
     peerDependencies:
       '@aws-sdk/client-dynamodb': ^3.310.0
@@ -6360,6 +6360,7 @@ packages:
       '@aws-sdk/client-s3': ^3.310.0
       '@aws-sdk/client-sagemaker-runtime': ^3.310.0
       '@aws-sdk/client-sfn': ^3.310.0
+      '@azure/storage-blob': ^12.15.0
       '@clickhouse/client': ^0.0.14
       '@elastic/elasticsearch': ^8.4.0
       '@getmetal/metal-sdk': '*'
@@ -6426,6 +6427,8 @@ packages:
       '@aws-sdk/client-sagemaker-runtime':
         optional: true
       '@aws-sdk/client-sfn':
+        optional: true
+      '@azure/storage-blob':
         optional: true
       '@clickhouse/client':
         optional: true
@@ -6546,7 +6549,7 @@ packages:
       js-tiktoken: 1.0.7
       js-yaml: 4.1.0
       jsonpointer: 5.0.1
-      langsmith: 0.0.16
+      langsmith: 0.0.17
       ml-distance: 4.0.1
       object-hash: 3.0.0
       openai: 3.3.0
@@ -6563,8 +6566,8 @@ packages:
       - supports-color
     dev: false
 
-  /langsmith@0.0.16:
-    resolution: {integrity: sha512-HD97KJaSpCcuixbjfRhpSFdo5rWz28OJiUVs5uBRZDKUN2Amg4PWd0NFzGO3xC8osnjPPRvgH9by6Ige79hjxQ==}
+  /langsmith@0.0.17:
+    resolution: {integrity: sha512-K9AmQSd84Uvbdej1pIzxiybTN4cGZkSpDuR3RK1QqkWA2sFpN169AkhQsxUMPP6gnJZ3ThwFLFQqClJi1PcX2A==}
     hasBin: true
     dependencies:
       '@types/uuid': 9.0.2
@@ -7714,8 +7717,8 @@ packages:
       is-wsl: 2.2.0
     dev: true
 
-  /openai-edge@1.2.0:
-    resolution: {integrity: sha512-eaQs+O/1k6OZMUibNlBzWPXdHFxpUNLMy4BwhtXCFDub5iz7ve/PxOJTL8GBG3/1S1j6LIL93xjdlzCPQpbdgQ==}
+  /openai-edge@1.2.2:
+    resolution: {integrity: sha512-C3/Ao9Hkx5uBPv9YFBpX/x59XMPgPUU4dyGg/0J2sOJ7O9D98kD+lfdOc7v/60oYo5xzMGct80uFkYLH+X2qgw==}
     engines: {node: '>=18'}
     dev: false
 
