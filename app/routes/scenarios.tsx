@@ -29,7 +29,7 @@ export function MainNav() {
           className="h-16"
         />
       </Link>
-      <nav className="flex items-center space-x-6 font-medium mr-auto">
+      <nav className="flex items-center space-x-6 text-sm font-medium mr-auto">
         {scenarios.map((scenario) => {
           return (
             <Link
