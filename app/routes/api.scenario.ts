@@ -13,8 +13,9 @@ export const action = async ({ request }: ActionArgs) => {
     const { stream, handlers } = LangChainStream();
     const chat = new ChatOpenAI({
       modelName: "gpt-3.5-turbo",
-      temperature: 0,
-      topP: 0.1,
+      temperature: 0, // default is 1, range is 0 to 2
+      // topP: 0.1, default is 1. openai does not recommend changing temperature and topP together.
+      // timeout: 1000, put into baseOptions for openai and used for axios calls. axios timeout in ms and defaults to 0 (no timeout)
       maxRetries: 0,
       streaming: true,
       verbose: true,
