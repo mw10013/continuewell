@@ -38,7 +38,6 @@ const nanoid = customAlphabet(
   7
 );
 
-
 export function loader({ params }: LoaderArgs) {
   const scenario = scenarios.find((s) => s.dynamicSegment === params.scenario);
   if (!scenario) {
@@ -327,7 +326,7 @@ export function ChatScrollAnchor() {
   React.useEffect(() => {
     if (isAtBottom && !inView) {
       entry?.target.scrollIntoView({
-        block: "start",
+        block: "start", // "end" does not seem to work reliably
       });
     }
   }, [inView, entry, isAtBottom]);
