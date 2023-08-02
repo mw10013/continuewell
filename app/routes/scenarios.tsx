@@ -22,7 +22,7 @@ export function MainNav() {
 
   return (
     <div className="flex">
-      <Link to="/" className="mr-6">
+      <Link to="https://www.continuewell.health/" className="mr-6">
         <img
           src="/continue-well-logo.jpg"
           alt="ContinueWell"
