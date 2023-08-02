@@ -14,6 +14,7 @@ export const action = async ({ request }: ActionArgs) => {
     const chat = new ChatOpenAI({
       modelName: "gpt-3.5-turbo",
       temperature: 0,
+      topP: 0.1,
       maxRetries: 0,
       streaming: true,
       verbose: true,
