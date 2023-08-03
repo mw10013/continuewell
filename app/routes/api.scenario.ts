@@ -12,6 +12,7 @@ export const action = async ({ request }: ActionArgs) => {
     //   const { content: question } = messages[messages.length - 1];
     const { stream, handlers } = LangChainStream();
     const chat = new ChatOpenAI({
+      // modelName: "gpt-4",
       modelName: "gpt-3.5-turbo",
       temperature: 0, // default is 1, range is 0 to 2
       // topP: 0.1, default is 1. openai does not recommend changing temperature and topP together.
