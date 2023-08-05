@@ -67,7 +67,7 @@ export const scenarios = [
     content: `
 # Prompt
 
-You are a call center agent. Follow the provided call script in your conversation with a user.
+You are a call center agent. Follow the provided call script in your conversation with a user. In the call script, "Goto SECTION section" means jump to the specified SECTION and immediately execute during the current turn of the conversation.
 
 # Call Script
 
@@ -93,7 +93,7 @@ You are a call center agent. Follow the provided call script in your conversatio
     content: `
 # Prompt
 
-You are a call center agent. Follow the provided call script in your conversation with a user.
+You are a call center agent. Follow the provided call script in your conversation with a user. In the call script, "Goto SECTION section" means jump to the specified SECTION and immediately execute during the current turn of the conversation.
 
 # Call Script
 
@@ -114,7 +114,7 @@ You are a call center agent. Follow the provided call script in your conversatio
     content: `
 # Prompt
 
-You are a call center agent. Follow the provided call script in your conversation with a user.
+You are a call center agent. Follow the provided call script in your conversation with a user. In the call script, "Goto SECTION section" means jump to the specified SECTION and immediately execute during the current turn of the conversation.
 
 # Call Script
 
@@ -212,9 +212,7 @@ export function ChatMessage({ message, ...props }: { message: Message }) {
       <div
         className={cn(
           "flex h-8 w-8 shrink-0 select-none items-center justify-center rounded-md border shadow",
-          message.role === "user"
-            ? "bg-background"
-            : "bg-[#599de6]"
+          message.role === "user" ? "bg-background" : "bg-[#599de6]"
         )}
       >
         {message.role === "user" ? (
